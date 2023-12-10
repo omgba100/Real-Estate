@@ -4,6 +4,7 @@ import About from "./pages/about/About"
 import Profile from "./pages/profile/profile"
 import Signup from "./pages/signup/Signup"
 import Signin from "./pages/signin/Signin"
+import Header from "./Components/Header"
 
 
 
@@ -13,6 +14,7 @@ function App() {
   return (
    
       <BrowserRouter>
+           <Header/>
          <Routes>
            <Route path="/" element={<Home/>} />
            <Route path="/about" element={<About/>} />
